@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo {
+  margin-top: 5px;
+}
+
+.header .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.header h1 {
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.profile {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statement p {
+  text-align: center;
+  color: #7e899e;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.inputs,
+.input-fields {
+  margin-top: 20px;
+}
+
+.profile .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.input-fields p {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #5d6779;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.workspace-details .input-fields span {
+  color: #a5aec2;
+  font-size: 14px;
+}
+
+.input-fields .MuiInputBase-root {
+  color: #a5aec2;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.input-fields .MuiOutlinedInput-input {
+  padding: 16.5px 20px !important;
+}
+
+.input-fields .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #664de5 !important;
+}
+
+.input-fields .text-input {
+  width: 430px;
+}
+
+.input-fields .email-field .default-email .MuiOutlinedInput-input {
+  font-weight: 600;
+  font-size: 14px;
+  height: 23px;
+  color: #afb7ca;
+}
+
+.input-fields .email-field .default-email {
+  width: 160px;
+  border-right: none;
+  background-color: #f8f9fc;
+}
+
+.input-fields .email-field .default-email .MuiOutlinedInput-notchedOutline {
+  border-right: none;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.input-fields .email-field .email-input .MuiOutlinedInput-notchedOutline {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.input-fields .email-field .email-input {
+  width: 270px;
+}
+
+.btn {
+  margin-top: 30px;
+}
+
+.btn button {
+  width: 430px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #664de5;
+  color: white;
+  font-size: 16px;
+}
+
+.selection-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.selection-cards .cards {
+  width: 200px;
+  min-height: 200px;
+  height: fit-content;
+  padding: 20px 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.selection-cards .cards h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.selection-cards .cards p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #7e899e;
+}
+
+.selection-cards .card-blue {
+  border-color: #664de5;
+}
+
+.complete .statement {
+  text-align: center;
+}
+
+.complete-icon .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #664de5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.complete-icon .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.stepper {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.stepper .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepper .step {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #7e899e;
+  border-radius: 50%;
+  border: 2px solid #f1f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-blue {
+  background-color: #664de5 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.stepper .line {
+  width: 70px;
+  height: 2px;
+  background-image: linear-gradient(90deg, #f1f4f8 100%, #664de5 0%);
+}
+
+.full-blue {
+  background-image: linear-gradient(90deg, #664de5 100%, #f1f4f8 0%) !important;
+}
+
+.half-gray-blue {
+  background-image: linear-gradient(90deg, #664de5 50%, #f1f4f8 50%) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .statement h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .statement p,
+  .input-fields p,
+  .selection-cards .cards h3,
+  .selection-cards .cards p {
+    font-size: 14px;
+  }
+
+  .stepper .step {
+    width: 30px;
+    height: 30px;
+  }
+
+  .stepper .line {
+    width: 50px;
+  }
+
+  .input-fields .text-input {
+    width: 330px;
+  }
+
+  .input-fields .email-field .default-email {
+    width: 140px;
+  }
+
+  .input-fields .email-field .email-input {
+    width: 190px;
+  }
+
+  .input-fields .email-field .default-email .MuiOutlinedInput-input {
+    font-weight: 600;
+    font-size: 12px;
+    height: 20px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-fields .MuiInputBase-root {
+    font-size: 14px;
+  }
+
+  .btn button {
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #664de5;
+    color: white;
+    font-size: 16px;
+  }
+
+  .selection-cards .cards {
+    width: 150px;
+    min-height: 220px;
+    height: fit-content;
+    padding: 15px 25px;
+  }
+
+  .selection-cards .cards h3 {
+    font-size: 14px;
+  }
+}
